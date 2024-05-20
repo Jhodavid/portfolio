@@ -4,20 +4,18 @@ class AppTheme {
   final bool isDarkMode;
 
   static const _colorDefaultScheme = ColorScheme(
-    background: Colors.white,
-    onBackground: Color(0xFFD4D1D1),
     brightness: Brightness.light,
     surfaceTint: Color.fromARGB(255, 216, 216, 216),
     error: Colors.red,
     onError: Colors.redAccent,
-    primary: Color(0xFF1d4ec2),
+    primary: Color(0xff94d793),
     onPrimary: Colors.white,
-    secondary: Color(0xFF612ec8),
+    secondary: Color(0xff0092e4),
     onSecondary: Colors.white,
-    tertiary: Color(0xFFA1C783),
+    tertiary: Color(0xFFffffff),
     surface: Colors.blueAccent,
-    onSurface: Color(0xFF999B9C),
-    onSurfaceVariant: Color(0xFFC26363),
+    onSurface: Color(0xff94d793),
+    onSurfaceVariant: Color(0xff0092e4),
   );
 
   AppTheme({this.isDarkMode = false});
@@ -30,6 +28,9 @@ class AppTheme {
       fontFamily: 'Inter',
       colorScheme: _colorDefaultScheme,
       textTheme: baseTheme.textTheme.copyWith(
+        titleLarge: const TextStyle(
+          color: Colors.white,
+        ),
         labelLarge: const TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold

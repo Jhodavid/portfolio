@@ -29,7 +29,7 @@ flutter:
   generate: true
 
   fonts:
-    - family: Fredoka
+    - family: Inter
       fonts:
         - asset: fonts/Inter-Black.ttf
         - asset: fonts/Inter-Bold.ttf
