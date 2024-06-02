@@ -5,7 +5,7 @@ class DownloadService {
 
   static Future<void> downloadCV() async {
     try {
-      final ByteData data = await rootBundle.load('assets/jonathan_poveda_cv.pdf');
+      final ByteData data = await rootBundle.load('assets/Jonathan Poveda - FullStack Mobile Developer.pdf');
       final List<int> bytes = data.buffer.asUint8List();
 
       final blob = html.Blob([bytes]);
@@ -13,7 +13,7 @@ class DownloadService {
       final url = html.Url.createObjectUrlFromBlob(blob);
 
       final anchor = html.AnchorElement(href: url)
-        ..setAttribute("download", "jonathan_poveda_cv.pdf")
+        ..setAttribute("download", "Jonathan Poveda - FullStack Mobile Developer.pdf")
         ..click();
 
       html.Url.revokeObjectUrl(url);
